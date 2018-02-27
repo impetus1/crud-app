@@ -7,8 +7,8 @@ update.addEventListener('click', function () {
     method: 'put',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
-      'name': 'Darth Vader',
-      'quote': 'I find your lack of faith disturbing.'
+      'name': 'Some name',
+      'quote': 'Needs more quotes.'
     })
   })
   .then(response => {
@@ -26,7 +26,7 @@ del.addEventListener('click', function () {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      'name': 'Darth Vader'
+      'name': 'Some name '
     })
   }).then(function (response) {
     window.location.reload()
